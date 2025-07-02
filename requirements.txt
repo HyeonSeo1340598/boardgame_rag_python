@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+
+python-dotenv
+
+pinecone-client
+langchain-openai
+langchain-upstage
+langchain-pinecone
+langchain-core
