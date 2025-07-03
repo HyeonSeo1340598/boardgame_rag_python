@@ -50,7 +50,8 @@ def answer_rag(request: RagRequest):
     )
 
     # 2. 관련 문서 검색
-    docs = vectorstore.similarity_search(request.question, k=5)
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
+    docs = retriever.invoke(request.question)
 
     # # 2. 관련 문서 검색
     # retriever = vectorstore.as_retriever(search_kwargs={"k": 5})
@@ -96,4 +97,4 @@ def root():
     return {"message": "🎲 Boardgame RAG API is running!"}
 
 # 서버 실행 코드
-# uvicorn rag_server:app --reload --port 8000
+# uvicorn app:app --reload --port 8000

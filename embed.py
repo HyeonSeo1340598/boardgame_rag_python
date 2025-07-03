@@ -19,9 +19,8 @@ index = pc.Index(index_name)
 
 # === PDF 목록 ===
 pdf_list = [
-    {"game": "카탄", "file": "pdfs/katan.pdf", "namespace": "katan"},
-    {"game": "낫쏘", "file": "pdfs/nassau.pdf", "namespace": "nassau"},
-    {"game": "스플렌더", "file": "pdfs/splendor.pdf", "namespace": "splendor"},
+    {"game": "메이플 벨리", "file": "pdfs/MapleValley.pdf", "namespace": "MapleValley"},
+    {"game": "스플렌더", "file": "pdfs/Splendor.pdf", "namespace": "Splendor"},
 ]
 
 # === 공통 설정 ===
